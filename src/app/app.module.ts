@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './routes/home/home.component';
@@ -16,6 +15,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { NavComponent } from './core/nav/nav.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GeneratorService } from './services/generator.service';
 
 @NgModule({
   declarations: [
@@ -37,8 +38,11 @@ import { NavComponent } from './core/nav/nav.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    GeneratorService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
