@@ -1,0 +1,29 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+        <img class="avatar mat-elevation-z8" src="/assets/images/2533561.png" />
+
+        <h3>Joel's Coding Playground (JCPG)</h3>
+        <h4 class="name">Joel Sahli</h4>
+        <p class="designation">Software Engineer / Entrepreneur</p>
+
+        <mat-divider></mat-divider>
+        <div >
+            <a class="navLinks" href="/generator">Pokemon Team Generator</a><br>
+            <a class="navLinks" href="/">Project 1</a><br>
+            <a class="navLinks" href="/">Project 2</a><br>
+            <a class="navLinks" href="/">Project 3</a><br>
+        </div>
+        <mat-divider></mat-divider>
+
+       
+
+    </mat-sidenav>
+    
+
+<mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+        <router-outlet></router-outlet>
+    </div>
+</mat-sidenav-content>
+</mat-sidenav-container>
