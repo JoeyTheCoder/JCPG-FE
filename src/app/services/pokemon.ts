@@ -1,6 +1,9 @@
+import { sprites } from "./sprites";
+
 export class pokemon{
-    count: string | undefined;
-    next: string | undefined;
-    previous: string | undefined;
-    results: [] | undefined
+    abilities: string | undefined;
+    height: string | undefined;
+    id: string | undefined;
+    name: string | undefined;
+    sprites: sprites[] | undefined;
 }
