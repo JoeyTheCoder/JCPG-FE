@@ -17,6 +17,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { NavComponent } from './core/nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GeneratorService } from './services/generator.service';
+import { NbaScoresComponent } from './routes/nba-scores/nba-scores.component';
+import { NbaService } from './services/nba.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { GeneratorService } from './services/generator.service';
     BlogComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    NbaScoresComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { GeneratorService } from './services/generator.service';
     HttpClientModule
   ],
   providers: [
-    GeneratorService
+    GeneratorService,
+    NbaService
   ],
   bootstrap: [AppComponent]
 })
